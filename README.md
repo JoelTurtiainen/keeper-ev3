@@ -1,8 +1,3 @@
-# keeper-ev3
-## LEGO EV3 Robotti joka etsii pallon ja nappaa sen 
-
-
-
 # Yleistä EV3DEV käytöstä
 Ev3dev flashaaminen sd kortille:  
 - https://education.lego.com/en-us/product-resources/mindstorms-ev3/teacher-resources/python-for-ev3/  
