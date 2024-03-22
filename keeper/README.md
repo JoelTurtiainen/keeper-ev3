@@ -1,3 +1,4 @@
+## Robotti etsii pallon ultraäänisensorilla, laskee sen keskikohdan ja yrittää napata pallon haarukalla
 >[!NOTE]
 >Ohjelma on tarkoitettu robotille joka käyttää [LEGO:n ohjeiden](https://education.lego.com/en-us/product-resources/mindstorms-ev3/downloads/building-instructions/) mukaan tehtyjä:  
 -Driving Base  
