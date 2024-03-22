@@ -1,24 +1,32 @@
 # keeper-ev3
 ## LEGO EV3 Robotti joka etsii pallon ja nappaa sen 
 
->[!NOTE]
->Ohjelma on tarkoitettu robotille joka käyttää [LEGO:n ohjeiden](https://education.lego.com/en-us/product-resources/mindstorms-ev3/downloads/building-instructions/) mukaan tehtyjä:  
--Driving Base  
--Color Sensor Down  
--Medium Motor Driving Base  
--Ultrasonic Sensor Driving Base
+
 
 # Yleistä EV3DEV käytöstä
-### Tästä dokumentoinnista löydät kaiken vaadittavan oman projektin luomiseen:  
-https://pybricks.com/ev3-micropython/
-### Tietokoneen yhdistäminen laitteeseen:
-https://www.ev3dev.org/docs/networking/  
-Laite tukee natiivisti bluetoothia, mutta wi-fi yhteys tarvitsee donglen usb porttiin.
-### Hyvä tietää
-1. Jotkut metodit esim ".straight()" odottaa että ajaminen on loppunut, ennen kuin koodin suoritus jatkuu.
-- Jos haluat tehdä muita asioita samalla käytä esim ".drive()" joka ajaa niin kauan kunnes auto saa uuden komennon
+Ev3dev flashaaminen sd kortille:  
+- https://education.lego.com/en-us/product-resources/mindstorms-ev3/teacher-resources/python-for-ev3/  
 
-print komento myös toimii normaalisti ja näät tulostuksen terminaalin 'output' välilehdestä
+Tästä dokumentaatiosta löydät kaiken tarvittavan:  
+- https://pybricks.com/ev3-micropython/  
+
+Tietokoneen yhdistäminen laitteeseen:  
+- https://www.ev3dev.org/docs/networking/  
+- Laite tukee natiivisti bluetoothia, mutta wi-fi yhteys tarvitsee donglen usb porttiin.
+
+### Hyvä tietää
+- *LEGO® MINDSTORMS® EV3 MicroPython* Lisäosan mukana tulee valmiita ohjelmia joita voit testailla, tässä repossa on myös yksi esimerkki jonka tein esedun messuja varten.
+
+- Jotkut metodit esim ```.straight()``` odottaa että ajaminen on loppunut, ennen kuin koodin suoritus jatkuu.
+
+- Jos haluat tehdä muita asioita samalla käytä esim ```.drive()``` joka ajaa niin kauan kunnes robotti käsketään pysähtymään.
+
+- Saat printtauksen näkymään 'Output' välilehteen jos olet yhdistänyt laitteen *ev3dev-browseriin*.
+
+- Voit myös yhdistää laitteen SSH:lla ja tutkia laitteen käyttöjärjestelmää tai suorittaa komentoja *ev3dev-browser* avulla
+
+- varmista että ohjelman alusta löytyy:  
+```#!/usr/bin/env pybricks-micropython```
 
 # Importtien tuominen
 >[!TIP]
@@ -50,3 +58,7 @@ pip install pybricks==2.0.0.post2
 ```
 "python.languageServer": "Pylance"
 ```
+
+### VSCoden laajennukset:
+https://marketplace.visualstudio.com/items?itemName=ev3dev.ev3dev-browser
+https://marketplace.visualstudio.com/items?itemName=lego-education.ev3-micropython
